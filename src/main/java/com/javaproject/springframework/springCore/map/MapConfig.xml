@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean name="customer"
+		class="com.javaproject.springframework.springCore.map.Customer">
+		<property name="id" value="CUS0609" />
+		<property name="products">
+			<map>
+				<entry key="678" value="fruits" />
+				<entry key="876" value="veg" />
+				<entry key="754" value="grocery" />
+				<entry key="67" value="others" />
+				<entry value="veg">
+					<key>
+						<value>0987</value>
+					</key>
+				</entry>
+				<entry key="675">
+					<value>Grocery</value>
+				</entry>
+			</map>
+		</property>
+
+	</bean>
+
+
+
+</beans>
