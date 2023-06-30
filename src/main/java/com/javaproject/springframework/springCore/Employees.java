@@ -3,6 +3,7 @@ package com.javaproject.springframework.springCore;
 public class Employees {
 private int id;
 private String name;
+private int amount;
 public int getId() {
 	return id;
 }
