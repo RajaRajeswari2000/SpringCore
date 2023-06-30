@@ -26,6 +26,13 @@
 				</entry>
 			</map>
 		</property>
+		<property name="itemsidAndName">
+		<props>
+		<prop key="678">fruits</prop>
+		<prop key="876">veg</prop>
+		</props>
+		
+		</property>
 
 	</bean>
 

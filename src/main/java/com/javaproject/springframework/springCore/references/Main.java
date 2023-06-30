@@ -17,7 +17,7 @@ public class Main {
 			Employees employee2 = (Employees) cxt.getBean("employee");
 			System.out.println(employee2.getAddress().hashCode());
 			Employees employee3 = (Employees) cxt.getBean("employee");
-			System.out.println(employee3.getAddress());
+			System.out.println(employee3.getAddress().hashCode());
 		}
 	}
 }

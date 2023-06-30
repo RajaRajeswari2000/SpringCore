@@ -8,10 +8,10 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 	<bean name="cardealer"
-		class="com.javaproject.springframework.springCore.set.CarDealer">
+		class="com.javaproject.springframework.springCore.set.CarDealer" p:models="suzki,honda,maruthi">
 		<property name="name">
 			<value>Shanmugham</value>
 		</property>
-		<property name="models" value="honda,maruthi" />
+		
 	</bean>
 </beans>

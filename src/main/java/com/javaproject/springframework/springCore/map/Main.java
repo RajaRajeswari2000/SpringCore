@@ -9,6 +9,7 @@ public class Main {
 				"com/javaproject/springframework/springCore/map/MapConfig.xml");
 		System.out.println(cxt.getBean(Customer.class).getId());
 		System.out.println(cxt.getBean(Customer.class).getProducts());
+		System.out.println(cxt.getBean(Customer.class).getItemsidAndName());
 
 	}
 

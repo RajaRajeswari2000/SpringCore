@@ -7,8 +7,9 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-	<bean name="add"
-		class="com.javaproject.springframework.springCore.references.Address" scope="prototype">
+	<bean name="address"
+		class="com.javaproject.springframework.springCore.autowiring.constructor.Address"
+		scope="prototype">
 		<property name="firstline">
 			<value>pillaiyarpatti</value>
 		</property>
@@ -19,21 +20,29 @@
 			<value>India</value>
 		</property>
 	</bean>
-	<bean name="employee"
-		class="com.javaproject.springframework.springCore.references.Employees" scope="singleton">
 
-		<property name="id" >
+	<bean name="mailid"
+		class="com.javaproject.springframework.springCore.autowiring.constructor.Email">
+
+		<property name="mailId">
+			<value>rajeshwarimeera0503@gmail.com</value>
+		</property>
+
+	</bean>
+
+	<bean name="employee"
+		class="com.javaproject.springframework.springCore.autowiring.constructor.Employees"
+		scope="singleton" autowire="constructor">
+
+		<property name="id">
 			<value>5678</value>
 		</property>
 		<property name="name">
 			<value>Raji</value>
 		</property>
-		<property name="address">
-			<ref bean="add" />
-		</property>
-
-
 
 	</bean>
+
+
 
 </beans>

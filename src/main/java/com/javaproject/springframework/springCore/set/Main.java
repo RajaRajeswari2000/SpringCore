@@ -10,6 +10,8 @@ public class Main {
 		System.out.println(cxt.getBean(CarDealer.class).getName());
 		System.out.println(cxt.getBean(CarDealer.class).getModels());
 		System.out.println(cxt.getBean(CarDealer.class).getModels().getClass());
+		
+		//how to convert set to treeset?
 	}
 
 }
