@@ -7,8 +7,11 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:component-scan base-package="com.javaproject.springframework.springCore.autowiring.annatotion"></context:component-scan>
+    
 	<bean name="address"
-		class="com.javaproject.springframework.springCore.autowiring.Address"
+		class="com.javaproject.springframework.springCore.autowiring.annatotion.Address"
 		scope="prototype">
 		<property name="firstline">
 			<value>pillaiyarpatti</value>
@@ -22,17 +25,40 @@
 	</bean>
 
 	<bean name="mailid"
-		class="com.javaproject.springframework.springCore.autowiring.Email">
+		class="com.javaproject.springframework.springCore.autowiring.annatotion.Email">
 
 		<property name="mailId">
 			<value>rajeshwarimeera0503@gmail.com</value>
 		</property>
 
 	</bean>
+	
+	<bean name="address1"
+		class="com.javaproject.springframework.springCore.autowiring.annatotion.Address"
+		scope="prototype">
+		<property name="firstline">
+			<value>North Street</value>
+		</property>
+		<property name="city">
+			<value>Mahadevapattanam</value>
+		</property>
+		<property name="country">
+			<value>India</value>
+		</property>
+	</bean>
+
+	<bean name="mailid1"
+		class="com.javaproject.springframework.springCore.autowiring.annatotion.Email">
+
+		<property name="mailId">
+			<value>rajeshwariindra@gmail.com</value>
+		</property>
+
+	</bean>
 
 	<bean name="employee"
-		class="com.javaproject.springframework.springCore.autowiring.Employees"
-		scope="singleton" autowire="byType">
+		class="com.javaproject.springframework.springCore.autowiring.annatotion.Employees"
+		scope="singleton">
 
 		<property name="id">
 			<value>5678</value>
@@ -42,6 +68,9 @@
 		</property>
 
 	</bean>
+
+
+
 
 
 

@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		try (ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext(
-				"com/javaproject/springframework/springCore/autowiring/RefConfig.xml")) {
+				"com/javaproject/springframework/springCore/autowiring/annatotion/RefConfig.xml")) {
 		    System.out.println(cxt.getBean(Employees.class).getName());
 			System.out.println(cxt.getBean(Employees.class).getId());
 			System.out.println(cxt.getBean(Employees.class).toString());

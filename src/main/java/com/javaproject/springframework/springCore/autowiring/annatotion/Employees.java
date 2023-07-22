@@ -1,18 +1,25 @@
 package com.javaproject.springframework.springCore.autowiring.annatotion;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 public class Employees {
 	private int id;
 	private String name;
+	@Autowired
+	@Qualifier("address")
 	private Address address;
- private Email mailid;
-	
-	public Email getMailid() {
-	return mailid;
-}
+	@Autowired
+	@Qualifier("mailid1")
+	private Email mailid;
 
-public void setMailid(Email mailid) {
-	this.mailid = mailid;
-}
+	public Email getMailid() {
+		return mailid;
+	}
+
+	public void setMailid(Email mailid) {
+		this.mailid = mailid;
+	}
 
 	public int getId() {
 		return id;
@@ -42,9 +49,5 @@ public void setMailid(Email mailid) {
 	public String toString() {
 		return "Employees [id=" + id + ", name=" + name + ", address=" + address + ", mailid=" + mailid + "]";
 	}
-	
-
-	
-	
 
 }

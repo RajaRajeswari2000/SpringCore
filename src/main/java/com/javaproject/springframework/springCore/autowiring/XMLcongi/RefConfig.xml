@@ -8,7 +8,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 	<bean name="address"
-		class="com.javaproject.springframework.springCore.autowiring.Address"
+		class="com.javaproject.springframework.springCore.autowiring.XMLcongi.Address"
 		scope="prototype">
 		<property name="firstline">
 			<value>pillaiyarpatti</value>
@@ -22,7 +22,7 @@
 	</bean>
 
 	<bean name="mailid"
-		class="com.javaproject.springframework.springCore.autowiring.Email">
+		class="com.javaproject.springframework.springCore.autowiring.XMLcongi.Email">
 
 		<property name="mailId">
 			<value>rajeshwarimeera0503@gmail.com</value>
@@ -31,7 +31,7 @@
 	</bean>
 
 	<bean name="employee"
-		class="com.javaproject.springframework.springCore.autowiring.Employees"
+		class="com.javaproject.springframework.springCore.autowiring.XMLcongi.Employees"
 		scope="singleton" autowire="byType">
 
 		<property name="id">

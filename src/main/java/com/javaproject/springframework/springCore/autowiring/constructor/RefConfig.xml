@@ -30,9 +30,9 @@
 
 	</bean>
 
-	<bean name="employee"
+	<bean name="employees"
 		class="com.javaproject.springframework.springCore.autowiring.constructor.Employees"
-		scope="singleton" autowire="constructor">
+		scope="singleton" autowire="byType">
 
 		<property name="id">
 			<value>5678</value>

@@ -1,4 +1,4 @@
-package com.javaproject.springframework.springCore.autowiring;
+package com.javaproject.springframework.springCore.autowiring.XMLcongi;
 
 public class Email {
 	private String mailId;
